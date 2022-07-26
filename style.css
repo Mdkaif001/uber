@@ -1,0 +1,165 @@
+:root {
+  --color-green: #06c167;
+  --font-family: sans-serif;
+  --gerycolor: rgb(238, 238, 238);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+.container {
+  width: calc(100% - 120px);
+  margin: 20px auto;
+}
+header .container {
+  display: flex;
+  align-items: center;
+}
+.searchBar {
+  margin-left: auto;
+}
+.container .logo h1 {
+  font-weight: 300;
+}
+.container .logo h1 span {
+  color: var(--color-green);
+  font-weight: 600;
+}
+header .container .currentDetails,
+.searchBar {
+  display: flex;
+}
+header .container .headerOption {
+  padding-left: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* options */
+.options {
+  padding: 1.2rem 0;
+  margin-left: 60px;
+}
+.options .optionBtn {
+  background-color: rgb(238, 238, 238);
+  padding: 0.8rem 1.2rem;
+  border: 0;
+  border-radius: 30px;
+  letter-spacing: 0.4px;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.options .selected {
+  background-color: black;
+  color: white;
+}
+.options .selected i {
+  color: white;
+}
+/* listing */
+
+.listing .container .headerOfList {
+  display: flex;
+  padding-bottom: 2rem;
+}
+.listing .container .headerOfList .left h2 {
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.listing .container .headerOfList .left span {
+  color: rgb(84, 84, 84);
+}
+
+.listing .container .headerOfList .headerViewOptions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.listing .container .headerOfList .headerViewOptions .viewAll {
+  color: var(--color-green);
+  padding-right: 1.3rem;
+}
+.headerViewOptions .viewMore .arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(238, 238, 238);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.headerViewOptions .viewMore .darker {
+  opacity: 1;
+}
+.headerViewOptions .viewMore .left:hover {
+  opacity: 1.2;
+}
+
+
+
+/* images */
+.listing {
+  margin-bottom:3.5rem ;
+}
+.mainListing{
+  display: flex;
+}
+.listingGird .listingElement {
+  width: 80%;
+  margin-right: 25px; 
+}
+.listingGird .listingElement .canter{
+width: 384px;
+}
+.listingGird .listingElement .image img {
+  height:240px;
+  overflow: hidden;
+  object-fit: cover;
+  overflow: hidden;
+}
+.listingElement .text {
+  margin-top: 1rem;
+}
+.listingElement .text h3 {
+  font-weight: 300;
+}
+.listingElement .text span {
+  font-size: 0.8rem;
+  color: rgb(174, 174, 174);
+}
+.listingElement .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(174, 174, 174);
+  padding-bottom: 0.8rem;
+}
+.rating {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(238, 238, 238);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.lower{
+ margin-top: 0.5rem ;
+ color:  rgb(174, 174, 174);
+ font-size: 0.9rem;
+ font-weight: 300;
+}
